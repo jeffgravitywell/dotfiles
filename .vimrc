@@ -39,9 +39,15 @@ set directory=~/.vim/swap
 
 " this servers as a quick ESC key
 inoremap jj <ESC>
+" move to the last night and center screen
 map <Leader>] Gzz
+" move the current line up or down
 map <C-J> ddp
 map <C-K> ddkkp
+" cut and paste to the system clipboard
+vnoremap <C-c> "+y
+map <C-p> "+p
+
 
 " this saves on lost focus
 au FocusLost * :wa
@@ -70,6 +76,7 @@ Plug 'python-mode/python-mode'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'davidoc/taskpaper.vim'
 Plug 'tpope/vim-obsession'
+Plug 'vim-scripts/fountain.vim'
 
 call plug#end()
 
