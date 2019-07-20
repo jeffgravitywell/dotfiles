@@ -46,7 +46,7 @@ map <C-J> ddp
 map <C-K> ddkkp
 " cut and paste to the system clipboard
 vnoremap <C-c> "+y
-map <C-p> "+p
+map <C-v> "+P
 
 
 " this saves on lost focus
@@ -58,7 +58,7 @@ call plug#begin('~/.vim/plugged')
 " themes and colors
 Plug 'sickill/vim-monokai'
 Plug 'morhetz/gruvbox'
-Plug 'nightsense/stellarized'
+" Plug 'nightsense/stellarized'
 
 " utilities
 Plug 'tpope/vim-surround' 
@@ -91,6 +91,9 @@ set rtp+=~/.fzf
     
 " MRU file spot
 let MRU_file='~/.vim/swap'
+
+" toggle button for gundo - undo mapping
+nnoremap <F5> :GundoToggle<CR>
 
 " vim-markdown configuration
 " let g:vim_markdown_folding_disabled = 1
