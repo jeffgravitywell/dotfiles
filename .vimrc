@@ -5,7 +5,7 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
-" Disable Arrow keys in Insert mode
+" disable arrow keys in insert mode
 imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
@@ -15,7 +15,6 @@ imap <right> <nop>
 set guifont=Menlo:h14
 set background=dark
 colorscheme gruvbox
-"set lines=44 columns=153
 
 " general options
 set smarttab
@@ -32,13 +31,19 @@ set autowrite
 set copyindent
 set laststatus=2
 set noshowmode  " to get rid of the default mode line
+
+" the lines below controls backup. write and delete backup after success etc
+set writebackup
+set nobackup
+set backupcopy=auto
 set undofile
+set swapfile
 set undodir=~/.vim/undo
 set backupdir=~/.vim/backup
 set directory=~/.vim/swap
 
-" this servers as a quick ESC key
-inoremap jj <ESC>
+" remap the caps-lock to esc in mac settings
+"
 " move to the last night and center screen
 map <Leader>] Gzz
 " move the current line up or down
@@ -47,7 +52,6 @@ map <C-K> ddkkp
 " cut and paste to the system clipboard
 vnoremap <C-c> "+y
 map <C-v> "+P
-
 
 " this saves on lost focus
 au FocusLost * :wa
@@ -62,25 +66,25 @@ Plug 'morhetz/gruvbox'
 
 " utilities
 Plug 'tpope/vim-surround' 
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-commentary'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
-Plug 'junegunn/goyo.vim'
 Plug 'godlygeek/tabular' | Plug 'plasticboy/vim-markdown'
-Plug 'tpope/vim-commentary'
-Plug 'sheerun/vim-polyglot'
 Plug 'yegappan/mru'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'sjl/gundo.vim'
-Plug 'python-mode/python-mode'
-Plug 'kien/rainbow_parentheses.vim'
 Plug 'davidoc/taskpaper.vim'
-Plug 'tpope/vim-obsession'
-Plug 'vim-scripts/fountain.vim'
+" Plug 'junegunn/goyo.vim'
+" Plug 'sheerun/vim-polyglot'
+" Plug 'vim-scripts/fountain.vim'
+" Plug 'python-mode/python-mode'
+" Plug 'kien/rainbow_parentheses.vim'
 
 call plug#end()
 
-" plug-in configurations
+" added below are plug-in configuration settings
 
 "nerdTree
 map <C-n> :NERDTreeToggle<CR>
@@ -99,25 +103,27 @@ nnoremap <F5> :GundoToggle<CR>
 " let g:vim_markdown_folding_disabled = 1
 
 let g:airline_powerline_fonts = 1
+let g:airline_theme = 'molokai'
+
+" save these for running on other, less supportive machines
 " let g:airline_symbols_ascii = 1
 " let g:airline_theme = 'base16_monokai'
 " let g:airline_theme = 'powerlineish'
-let g:airline_theme = 'molokai'
 
- if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-  endif
+if !exists('g:airline_symbols')
+   let g:airline_symbols = {}
+endif
 
-  " unicode symbols
-  let g:airline_left_sep = '»'
-  let g:airline_left_sep = '▶'
-  let g:airline_right_sep = '«'
-  let g:airline_right_sep = '◀'
-  let g:airline_symbols.crypt = '🔒'
-  let g:airline_symbols.linenr = '¶'
-  let g:airline_symbols.maxlinenr = '+'
-  let g:airline_symbols.branch = '|'
-  let g:airline_symbols.paste = 'Þ'
-  let g:airline_symbols.spell = ';'
-  let g:airline_symbols.notexists = ':'
-  let g:airline_symbols.whitespace = 'Ξ'
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.maxlinenr = '+'
+let g:airline_symbols.branch = '|'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.spell = ';'
+let g:airline_symbols.notexists = ':'
+let g:airline_symbols.whitespace = 'Ξ'
