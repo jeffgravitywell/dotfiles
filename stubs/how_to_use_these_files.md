@@ -1,0 +1,1 @@
+These stubs are just pointers to wherever you put your dotfiles. Once you've moved the dotfiles directory into place, move these vanilla dotfiles to your home directory and update the path to point to where you installed the git repo.  I have these files stored in my ~ directory but you may have re-based. 
