@@ -34,13 +34,13 @@ set noshowmode  " to get rid of the default mode line
 
 " the lines below controls backup. write and delete backup after success etc
 set writebackup
-set nobackup
 set backupcopy=auto
 set undofile
 set swapfile
 set undodir=~/.vim/undo
 set backupdir=~/.vim/backup
 set directory=~/.vim/swap
+" set nobackup
 
 " remap the caps-lock to esc in mac settings
 "
