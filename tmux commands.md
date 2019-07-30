@@ -27,3 +27,10 @@ prefix + \ to create a vertical split
 prefix + - to create a horizontal split
 prefix + : to go into edit mode and then type "resize-panel -R 55" to set it up standard
 the L R U D (left, right up and down) diretion indicates the way the divider will move
+
+## NEW WINDOWS
+tmux new-window (prefix + c) - create a new window
+tmux select-window -t :0-9 (prefix + 0-9) - move to the window based on index
+tmux rename-window (prefix + ,)
+prefix + x to close a window
+
