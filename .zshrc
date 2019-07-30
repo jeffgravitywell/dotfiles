@@ -6,14 +6,15 @@ export ZSH="/Users/jeffreyhunsberger/.oh-my-zsh"
 
 # this switch loads the last saved session using tpope's vim-obsession
 alias vim="vim -S"
+alias sshds="ssh -p 44 -c aes256-cbc admin@10.0.0.3"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
+ZSH_THEME="robbyrussell"
 # ZSH_THEME="wezm"
-ZSH_THEME="bira"
+# ZSH_THEME="bira"
 
 ZSH_DISABLE_COMPFIX="true"
 
