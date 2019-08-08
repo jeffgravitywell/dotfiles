@@ -47,6 +47,8 @@ https://vim.fandom.com/wiki/Folding
 i - in
 u - undo
 
+w4db - for each word, delete 4 words backwards
+
 gU - "go uppercase"
 gu - "go lowercase"
 gUaW - uppercase a word
