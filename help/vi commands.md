@@ -46,6 +46,7 @@ https://vim.fandom.com/wiki/Folding
 # WORD ACTIONS
 i - in
 u - undo
+ctrl-r - redo
 
 w4db - for each word, delete 4 words backwards
 
@@ -53,6 +54,10 @@ gU - "go uppercase"
 gu - "go lowercase"
 gUaW - uppercase a word
 gUU or gU$  - upppercase to the end of the line
+gUl - upper case the first letter
+bgUl - go to beginning of word and upper case first letter
+~  - change the case of the letter under the cursor
+
 
 daw - delete a word
 dt  - delete 'til
@@ -133,6 +138,9 @@ Using FZF, hit CTRL-T to open in a new tab
 Using MRU, hit T to open in a new tab
 
 ## MOVING WITH MARKS
+m< and m> will set invisible markers at the beginning and end of a spot
+use gv to get a visual section between those two markers. use for long deletes or changes
+
 mm  - set a mark and call it "m"
 `{a-z} = to return there
 '{a-z} = to return to the first character of the mark
