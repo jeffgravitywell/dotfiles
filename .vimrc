@@ -44,7 +44,7 @@ set directory=~/.vim/swap
 
 " remap the caps-lock to esc in mac settings
 "
-" move to the last night and center screen
+" move to the last line and center screen
 map <Leader>] Gzz
 " move the current line up or down
 map <C-J> ddp
