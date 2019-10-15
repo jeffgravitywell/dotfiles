@@ -52,6 +52,7 @@ map <C-K> ddkkp
 " cut and paste to the system clipboard
 vnoremap <C-c> "+y
 map <C-v> "+P
+map <Leader><tab> :tabnew
 
 " this saves on lost focus
 au FocusLost * :wa
