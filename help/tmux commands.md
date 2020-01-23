@@ -17,8 +17,8 @@ ts - create named session
 prefix + h, prefix + j, prefix + k, and prefix + l will switch session windows
 
 ## RESTORING STATE
-prefix + s will save the current window and contents state to the current session
-prefix + r will restore a cached session
+prefix + C-s will save the current window and contents state to the current session
+prefix + C-r will restore a cached session
 use ta <session ID> to reattach the session prior to restoring cache
 
 ## RESIZING WINDOWS
@@ -34,3 +34,11 @@ tmux select-window -t :0-9 (prefix + 0-9) - move to the window based on index
 tmux rename-window (prefix + ,)
 prefix + x to close a window
 
+## MOVING WINDOWS
+prefix : and then
+    swap-window -s 1 -t 3
+this swaps window 1 for window 3
+or 
+prefix : and then
+    swap-window -t 0
+this swaps the top window with the current window

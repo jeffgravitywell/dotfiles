@@ -52,7 +52,7 @@ map <C-K> ddkkp
 " cut and paste to the system clipboard
 vnoremap <C-c> "+y
 map <C-v> "+P
-map <Leader><tab> :tabnew
+map <Leader><tab> :tabnew<enter>
 
 " this saves on lost focus
 au FocusLost * :wa
@@ -77,7 +77,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'sjl/gundo.vim'
 Plug 'davidoc/taskpaper.vim'
 Plug 'junegunn/goyo.vim'
-Plug 'machakann/vim-highlightedyank'
+Plug 'https://github.com/alok/notational-fzf-vim'
+" Plug 'machakann/vim-highlightedyank'
 " Plug 'mhinz/vim-startify'
 " Plug 'tpope/vim-commentary'
 " Plug 'kien/ctrlp.vim'
@@ -103,6 +104,9 @@ let MRU_file='~/.vim/swap'
 
 " toggle button for gundo - undo mapping
 nnoremap <F5> :GundoToggle<CR>
+
+" for notational velocity
+let g:nv_search_paths = ['~/Documents/Notes', '~/.dotfiles', '~/Downloads', '~/Desktop']
 
 " vim-markdown configuration
 " let g:vim_markdown_folding_disabled = 1

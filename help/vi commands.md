@@ -6,6 +6,7 @@
 "shift-h", "shift-m", "shift-l" - go to the high, middle and lower part of the screen
 "ctrl-f" forward one screen, "ctrl-b" is back one screen
 "ctrl-e", "ctrl-y" move up and down the window
+gj and gk move the cursor up and down by screenline and not line
 
 gg - top of file
 Gzz - Goes to the bottom and then centers the screen
@@ -20,7 +21,7 @@ gT - previous tab
 ^ - goes to the start of the line (first character, doesn't end in Insert mode)
 0 - goes to the start of the first column (doesn't end in Insert mode)
 $  - go to line end
-6$ - go to end of line 6 times
+6$ - go to end of line 6 times 
 { or } move around by paragraph
 
 I - go to the beginning of the first non-whitespace character in a line
@@ -57,8 +58,7 @@ gUU or gU$  - upppercase to the end of the line
 gUl - upper case the first letter
 bgUl - go to beginning of word and upper case first letter
 ~  - change the case of the letter under the cursor
-
-
+xp - transpose two letters  
 daw - delete a word
 dt  - delete 'til
 ciw - change in word
@@ -103,7 +103,7 @@ ysiw<tag> - yank, substitute in work (tag, in this case)
 <C-w>v command to split the window vertically
 <C-w>o command to close windows, keeping ONLY the current window open
 <C-w>c command to close the window targeted
-
+<C-w>j,k,h,l to move between splits
 
 # WORKING WITH FILES
 :tabnew filename - creates a new file in a new tab
@@ -136,6 +136,7 @@ https://github.com/davidoc/taskpaper.vim
 ## OPENING FILES
 Using FZF, hit CTRL-T to open in a new tab
 Using MRU, hit T to open in a new tab
+Using NV, type :NV to open search, then c-t to open in new tab, c-v for vertical split
 
 ## MOVING WITH MARKS
 m< and m> will set invisible markers at the beginning and end of a spot
