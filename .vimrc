@@ -1,4 +1,4 @@
-source $VIMRUNTIME/defaults.vim
+" source $VIMRUNTIME/defaults.vim
 
 " for training purposes only
 " disable arrow keys in normal mode
