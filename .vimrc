@@ -30,6 +30,7 @@ set smartindent
 set number
 set nocp 
 set relativenumber
+set nohlsearch
 set autowrite
 set copyindent
 set linebreak
