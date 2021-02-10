@@ -12,3 +12,37 @@
 - enter on last cell to add a new row
 - C-c, C-c to "fix" the row, spacing-wise
 
+
+All of these are using Doom Emacs and Org-mode
+#+ EMACS
+* Capture
+** How to capture data quickly
+*** Using Doom Emacs: SPC-X (shift-X)
+
+* Navigation
+** With tabs enabled in init.el: gT, gt (need keybinds set)
+
+If you would like to switch between files that you have already opened (these currently open screens are called “buffers” in Emacs) then you can use:
+SPC ,
+
+https://medium.com/urbint-engineering/emacs-doom-for-newbies-1f8038604e3b
+
+* Agenda
+** SPC-o-A-f
+
+* Note Taking Tips
+** Turning lines into TODOS : SPC-m-t-t
+** Indenting and un-indenting: m-s-arrow left/right
+
+* Using Emacs Org Projects
+** Add file to org project
+** Remove file from org project
+
+* Exporting
+** C-c, C-e
+
+* Navigating an Org file
+** TAB when typing to indent on level
+** S-TAB to de-indent while typing
+** If not in insert mode tab toggles visibility
+** in Normal Mode- tab and s-tab cycle levels of visibility
