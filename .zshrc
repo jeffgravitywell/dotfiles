@@ -2,13 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jhunsberger/.oh-my-zsh"
+export ZSH="/Users/jeffreyhunsberger/.oh-my-zsh"
 
 # this switch loads the last saved session using tpope's vim-obsession
-alias vim="nvim -S"
+alias vim="nvim"
+# alias vim="nvim -S"
 # alias vim="nvim"
 
-alias ls="ls -Fas"
+Alias lf="ls -Fas"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -37,8 +38,8 @@ plugins=(
     themes
     tmux
     vi-mode
-    zsh-syntax-highlighting
-    zsh-autosuggestions
+#     zsh-syntax-highlighting
+#     zsh-autosuggestions
     )
-
+  
 source $ZSH/oh-my-zsh.sh
