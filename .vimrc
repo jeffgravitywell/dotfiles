@@ -1,3 +1,5 @@
+" source $VIMRUNTIME/defaults.vim
+
 " for training purposes only
 " disable arrow keys in normal mode
 map <up> <nop>
@@ -14,7 +16,6 @@ imap <right> <nop>
 " look and feel
 set guifont=Menlo:h14
 set background=dark
-colorscheme gruvbox
 
 " general options
 set smarttab
@@ -22,6 +23,8 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 set expandtab
+set wrap
+set linebreak
 set autoindent
 set smartindent
 set number
@@ -30,6 +33,7 @@ set relativenumber
 set nohlsearch
 set autowrite
 set copyindent
+set linebreak
 set laststatus=2
 set noshowmode  " to get rid of the default mode line
 set linebreak
@@ -65,7 +69,7 @@ map <Leader><tab> :tabnew<enter>
 call plug#begin('~/.vim/plugged')
 
 " themes and colors
-Plug 'sickill/vim-monokai'
+" Plug 'sickill/vim-monokai'
 Plug 'morhetz/gruvbox'
 " Plug 'nightsense/stellarized'
 
@@ -81,11 +85,15 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'sjl/gundo.vim'
 Plug 'davidoc/taskpaper.vim'
 Plug 'junegunn/goyo.vim'
+<<<<<<< HEAD
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'hsitz/VimOrganizer'
 Plug 'chrisbra/NrrwRgn'
 
 " Plug 'https://github.com/alok/notational-fzf-vim'
+=======
+" Plug 'alok/notational-fzf-vim'
+>>>>>>> b72a176874f0218616ef493350dfaacec8e4ce88
 " Plug 'machakann/vim-highlightedyank'
 " Plug 'mhinz/vim-startify'
 " Plug 'tpope/vim-commentary'
@@ -153,3 +161,6 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.spell = ';'
 let g:airline_symbols.notexists = ':'
 let g:airline_symbols.whitespace = 'Ξ'
+
+   
+colorscheme gruvbox

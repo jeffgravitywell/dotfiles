@@ -1,0 +1,14 @@
+## Navigation
+- Alt/opt + enter - create a new line below the current one at the same indentation
+- Alt/opt + h/j/k/l to indent and move headers around the file
+- Tab while typing a line will also move it deeper or shallower in the indent heirarchy
+- SPC+o+A+f is my org agenda view
+- Typing a series of * will indent when you hit space. Tab and shift-tab to fix
+
+
+## Tables
+- C-c, - to add a line
+- tab to navigate cells
+- enter on last cell to add a new row
+- C-c, C-c to "fix" the row, spacing-wise
+
