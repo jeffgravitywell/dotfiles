@@ -29,17 +29,17 @@
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/Documents/Notes/")
+(setq org-directory "~/Sync/org")
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
-(setq display-line-numbers-type t)
+(setq display-line-numbers-type 'relative)
 
-(setq org-capture-templates
-      '(("t" "Todo" entry (file+headline "~/org/inbox.org" "Tasks")
-         "* TODO %?\n  %i\n  %a")
-        ("j" "Journal" entry (file+datetree "~/org/journal.org")
-         "* %?\nEntered on %U\n  %i\n  %a")))
+;; (setq org-capture-templates
+;;      '(("t" "Todo" entry (file+headline "~/org/inbox.org" "Tasks")
+;;         "* TODO %?\n  %i\n  %a")
+;;        ("j" "Journal" entry (file+datetree "~/org/journal.org")
+;;         "* %?\nEntered on %U\n  %i\n  %a")))
 ;;
 ;;(set q org-capture-templates
 ;;     '(("t" "New Entry" entry (file "inbox.org")
