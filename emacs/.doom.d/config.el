@@ -68,9 +68,13 @@
          ((agenda "")
           (tags-todo "flagged|next")))
         ))
+
+;; tab controls like in VIM
 (define-key evil-normal-state-map (kbd "g t") 'centaur-tabs-forward)
 (define-key evil-normal-state-map (kbd "g T") 'centaur-tabs-backward)
 
+;; saves buffers containing things like vim macros
+;; written by Henrik in doom emacs discord
 (after! savehist
   (add-to-list 'savehist-additional-variables 'register-alist)
   (add-hook! 'savehist-save-hook
