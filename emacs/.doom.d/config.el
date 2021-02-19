@@ -1,5 +1,4 @@
 ;;; $DOOMDIR/config.el -*- lexical-binding: t; -*-
-;; WORK VERSION
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
 
@@ -26,6 +25,9 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-gruvbox)
+
+(setq doom-font
+      (font-spec :family "Input Mono Narrow" :size 12 :style 'regular))
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -60,7 +62,12 @@
 ;; To get information about any of these functions/macros, move the cursor over
 ;; the highlighted symbol at press 'K' (non-evil users must press 'C-c c k').
 ;; This will open documentation for it, including demos of how they are used.
-;;
+
+;; Change default prefix key; needs to be set before loading org-journal
+(setq org-journal-file-type 'monthly)
+(setq org-journal-dir "~/Sync/org/journal/"
+      org-journal-date-format "%A, %d %B %Y")
+
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 (setq org-agenda-custom-commands
@@ -79,4 +86,4 @@
   (add-to-list 'savehist-additional-variables 'register-alist)
   (add-hook! 'savehist-save-hook
     (defun doom-clean-up-registers-h ()
-      (setq-local register-alist (cl-remove-if-not #'savehist-printable register-alist)))))
+     
