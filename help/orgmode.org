@@ -1,18 +1,3 @@
-## Navigation
-- Alt/opt + enter - create a new line below the current one at the same indentation
-- Alt/opt + h/j/k/l to indent and move headers around the file
-- Tab while typing a line will also move it deeper or shallower in the indent heirarchy
-- SPC+o+A+f is my org agenda view
-- Typing a series of * will indent when you hit space. Tab and shift-tab to fix
-
-
-## Tables
-- C-c, - to add a line
-- tab to navigate cells
-- enter on last cell to add a new row
-- C-c, C-c to "fix" the row, spacing-wise
-
-
 All of these are using Doom Emacs and Org-mode
 #+ EMACS
 * Capture
@@ -35,8 +20,8 @@ https://medium.com/urbint-engineering/emacs-doom-for-newbies-1f8038604e3b
 ** Indenting and un-indenting: m-s-arrow left/right
 
 * Using Emacs Org Projects
-** Add file to org project
-** Remove file from org project
+** C-c+[ Add file to org project
+** C-c~ ] Remove file from org project
 
 * Exporting
 ** C-c, C-e
@@ -47,7 +32,16 @@ https://medium.com/urbint-engineering/emacs-doom-for-newbies-1f8038604e3b
 ** If not in insert mode tab toggles visibility
 ** in Normal Mode- tab and s-tab cycle levels of visibility
 
-*** zn opens the current headline in a buffer
-*** zO (cap o) opens all subtree content of current header
-*** zR opens all folds
-*** zA closes all folds
+** zn opens the current headline in a buffer
+** zO (cap o) opens all subtree content of current header
+** zR opens all folds
+** zA closes all folds
+
+* Searching
+** Use Fzf (install package)
+** type spc-:-fzf
+** use "fg" to exit the term session
+** you can supposedly use C-c, C-o to exit term session too
+
+* Writing
+** SPC-t-z goes into zen mode (writeroom mode)
