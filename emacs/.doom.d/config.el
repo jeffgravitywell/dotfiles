@@ -86,4 +86,12 @@
   (add-to-list 'savehist-additional-variables 'register-alist)
   (add-hook! 'savehist-save-hook
     (defun doom-clean-up-registers-h ()
+      (setq-local register-alist (cl-remove-if-not #'savehist-printable register-alist)))))
+
+;; use SPC-t-z to go into Zen/Writeroom mode. This patch keeps it in typewriter mode too
+;; written by Henrik in doom emacs discord
+(add-hook! 'writeroom-mode-hook
+  (if writeroom-mode
+      (add-hook 'post-command-hook #'recenter nil t)
+    (remove-hook 'post-command-hook #'recenter t)))
      
