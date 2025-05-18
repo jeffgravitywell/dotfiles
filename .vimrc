@@ -85,15 +85,12 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'sjl/gundo.vim'
 Plug 'davidoc/taskpaper.vim'
 Plug 'junegunn/goyo.vim'
-<<<<<<< HEAD
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'hsitz/VimOrganizer'
 Plug 'chrisbra/NrrwRgn'
 
 " Plug 'https://github.com/alok/notational-fzf-vim'
-=======
 " Plug 'alok/notational-fzf-vim'
->>>>>>> b72a176874f0218616ef493350dfaacec8e4ce88
 " Plug 'machakann/vim-highlightedyank'
 " Plug 'mhinz/vim-startify'
 " Plug 'tpope/vim-commentary'
